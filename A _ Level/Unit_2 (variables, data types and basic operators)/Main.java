@@ -225,12 +225,12 @@ public class Main {
   public static void main(String args[]) {
     String firstName = "irşad";
     String lastName = "küreş";
-    System.out.println(firstName + " " + lastName);
+    System.out.println(firstName + " " + lastName); 
 
 
     String firstName = "irşad ";
     String lastName = "küreş";
-    System.out.println(firstName.concat(lastName));
+    System.out.println(firstName.concat(lastName));  
 
     String firstName = "irşad ";
     String lastName = "küreş";
@@ -247,7 +247,7 @@ public class Main {
     System.out.println(greeting);
 
     String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    System.out.println("The length of the txt string is: " + txt.length());
+    System.out.println("The length of the txt string is: " + txt.length()); // karekter sayısını gösterir...
 
     String txt = "Hello World";
     System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
@@ -278,21 +278,13 @@ public class Main {
 //                                                                                 Strings - Special Characters
 Code	      Result	
 \n	        New Line	
-\r	        Carriage Return	
 \t	        Tab	
 \b	        Backspace	
-\f	        Form Feed
+
 
 public class Main {
   public static void main(String[] args) {
     String txt = "Hello\nWorld!";
-    System.out.println(txt);
-  }
-}
-
-public class Main {
-  public static void main(String[] args) {
-    String txt = "Hello\rWorld!";
     System.out.println(txt);
   }
 }
@@ -312,7 +304,16 @@ public class Main {
 }
 
 //-------------------------------------------------------------------------------------------------------------
-//                                                                                                  Operatörler
+// 
+Operator	          Name	                  Description	                         Example	
++	               Addition	             Adds together two values	                  x + y	
+-	               Subtraction	         Subtracts one value from another	          x - y	
+*	               Multiplication	       Multiplies two values	                    x * y	
+/	               Division	             Divides one value by another	              x / y	
+%	               Modulus	             Returns the division remainder	            x % y	
+++	             Increment	           Increases the value of a variable by 1	    ++x	
+--	             Decrement	           Decreases the value of a variable by 1	    s--x
+                                                                                                 Operatörler
 public class Main {
     public static void main(String[] args) {
         /*
@@ -332,4 +333,168 @@ public class Main {
         
         System.out.println((3f / 4) + (4 * 5));              
     }
+}
+
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    ++x;
+    System.out.println(x);
+  }
+}
+
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    --x;
+    System.out.println(x);
+  }
+}
+//-------------------------------------------------------------------------------------------------------------
+// 
+
+Operator	      Example	       Same As	
+=	              x = 5	          x = 5	
++=	            x += 3	        x = x + 3	
+-=	            x -= 3	        x = x - 3	
+*=	            x *= 3	        x = x * 3	
+/=	            x /= 3	        x = x / 3	
+%=	            x %= 3	        x = x % 3	
+
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x);
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x += 3;
+    System.out.println(x);
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x -= 3;
+    System.out.println(x);
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x *= 3;
+    System.out.println(x);
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    double x = 5;
+    x /= 3;
+    System.out.println(x);
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x %= 3;
+    System.out.println(x);
+  }
+}
+
+//-------------------------------------------------------------------------------------------------------------
+// 
+
+Operator	             Name	                      Example	
+==	                  Equal to	                  x == y	
+!=	                  Not equal	                  x != y	
+>	                    Greater than	              x > y	
+<	                    Less than	                  x < y	
+>=	                  Greater than or equal to	  x >= y	
+<=	                  Less than or equal to	      x <= y
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x == y); // returns false because 5 is not equal to 3
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x != y); // returns true because 5 is not equal to 3
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x > y); // returns true because 5 is greater than 3
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x < y); // returns false because 5 is not less than 3
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x >= y); // returns true because 5 is greater, or equal, to 3
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x <= y); // returns false because 5 is neither less than or equal to 3
+  }
+}
+
+//-------------------------------------------------------------------------------------------------------------
+// 
+
+Operator	         Name	                         Description	
+&& 	               Logical and	                 Returns true if both statements are true	x < 5 &&  x < 10	
+|| 	               Logical or	                   Returns true if one of the statements is true	x < 5 || x < 4	
+!	                 Logical not	                 Reverse the result, returns false if the result is true	!(x < 5 && x < 10)
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x > 3 && x < 10); // returns true because 5 is greater than 3 AND 5 is less than 10
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x > 3 || x < 4); // returns true because one of the conditions are true (5 is greater than 3, but 5 is not less than 4)
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(!(x > 3 && x < 10)); // returns false because ! (not) is used to reverse the result
+  }
 }
