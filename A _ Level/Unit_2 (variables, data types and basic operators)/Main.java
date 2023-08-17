@@ -312,7 +312,7 @@ Operator	          Name	                  Description	                         E
 /	               Division	             Divides one value by another	              x / y	
 %	               Modulus	             Returns the division remainder	            x % y	
 ++	             Increment	           Increases the value of a variable by 1	    ++x	
---	             Decrement	           Decreases the value of a variable by 1	    s--x
+--	             Decrement	           Decreases the value of a variable by 1	    --x
                                                                                                  Operatörler
 public class Main {
     public static void main(String[] args) {
@@ -329,7 +329,7 @@ public class Main {
         System.out.println(3 - 5f);
         System.out.println(10 / 4.0);
         System.out.println(3 * 4.5);
-        System.out.println(10 % 4);
+        System.out.println(10 % 4);    
         
         System.out.println((3f / 4) + (4 * 5));              
     }
@@ -497,4 +497,102 @@ public class Main {
     int x = 5;
     System.out.println(!(x > 3 && x < 10)); // returns false because ! (not) is used to reverse the result
   }
+}
+
+//-------------------------------------------------------------------------------------------------------------
+//                                                                                           input -- scan data
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int yas1 = scanner.nextInt();
+        int yas2 = scanner.nextInt();
+        int yas3 = scanner.nextInt();   
+        System.out.println("yas1 : " + yas1 + " yas2: " + yas2 + " yas3: " + yas3 );     
+        /*int yas = scanner.nextInt();
+        scanner.nextLine(); // Dummy
+        String isim = scanner.nextLine();
+        System.out.println("Yaş: " + yas);
+        System.out.println("İsim: " + isim);*/    
+    }
+}
+//-------------------------------------------------------------------------------------------------------------
+//                                                                                                      örnek_1
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args) {
+         /*
+        Kullanıcıdan aldığınız boy ve kilo değerlerine göre kullanıcının beden kitle indeksini bulun.
+
+        Beden Kitle İndeksi : Kilo / Boy(m) * Boy(m)
+    
+        */
+         Scanner scanner = new Scanner(System.in);
+         
+         System.out.print("Kilonuzu Girin:");
+         int kilo = scanner.nextInt();
+         System.out.print("Boyunuzu Girin:(Örnek :  1,72)");
+         double boy = scanner.nextDouble();      
+         double bki = kilo / (boy * boy);  
+         System.out.println("Beden Kitle Indeksiniz : " + bki);         
+    }
+}
+//-------------------------------------------------------------------------------------------------------------
+//                                                                                                      örnek_2
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args) {
+        // Kullanıcıdan Aldığınız iki sayının değerlerini değiştirin.
+        Scanner scanner = new Scanner(System.in);
+        int birinci_sayi;
+        int ikinci_sayi;
+        System.out.print("Birinci Sayı : ");
+        birinci_sayi = scanner.nextInt();
+        System.out.print("İkinci Sayı : ");
+        ikinci_sayi = scanner.nextInt();
+        System.out.println("Değiştirilmeden Önce....");
+        System.out.println("Birinci Sayı : " + birinci_sayi + " İkinci Sayı : " + ikinci_sayi);
+        int gecici = birinci_sayi;
+        birinci_sayi = ikinci_sayi;
+        ikinci_sayi = gecici;
+        System.out.println("Değiştirildikten Sonra....");
+        System.out.println("Birinci Sayı : " + birinci_sayi + " İkinci Sayı : " + ikinci_sayi);
+    }
+}
+//-------------------------------------------------------------------------------------------------------------
+//                                                                                                      örnek_3
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner  = new Scanner(System.in);
+        int a;
+        int b;
+        System.out.print("Birinci Kenar : ");
+        a = scanner.nextInt();
+        System.out.print("İkinci Kenar : ");
+        b = scanner.nextInt();
+        
+        double h = Math.sqrt(a * a + b * b);
+        System.out.println("Hipotenüs : " + h);
+    }
+}
+
+//-------------------------------------------------------------------------------------------------------------
+//                                                                                                      örnek_4
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args) {
+        /*
+
+        Bir aracın kilometrede ne kadar yaktığı ve kaç kilometre yol yaptığı bilgilerini alın ve 
+        sürücünün toplam ne kadar ödemesini gerektiğini hesaplayın.
+
+        */
+        Scanner scanner = new Scanner(System.in);     
+        System.out.print("Aracınız kilometre kaç kuruş yakıyor? (Örnek : 0,32):");
+        double kurus = scanner.nextDouble();
+        System.out.print("Aracınızla kaç kilometre gittiniz ? :");
+        int km = scanner.nextInt();
+        System.out.println("Toplam ödemeniz gereken tutar : " + (kurus * km) + " tl dir...");
+    }
 }
