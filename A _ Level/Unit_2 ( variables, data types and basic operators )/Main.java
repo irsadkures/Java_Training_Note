@@ -519,7 +519,7 @@ public class Main {
 //-------------------------------------------------------------------------------------------------------------
 //                                                                                                      örnek_1
 import java.util.Scanner;
-public class Test {
+public class  Main {
     public static void main(String[] args) {
          /*
         Kullanıcıdan aldığınız boy ve kilo değerlerine göre kullanıcının beden kitle indeksini bulun.
