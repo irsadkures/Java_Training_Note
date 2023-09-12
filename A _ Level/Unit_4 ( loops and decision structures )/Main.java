@@ -404,7 +404,7 @@ public class Main {
         
         int giris_hakki = 3;
         
-        String sys_kullanici_adi = "Mustafa Murat";
+        String sys_kullanici_adi = "techdil";
         String sys_parola = "12345";
         
         System.out.println("*****************************");
