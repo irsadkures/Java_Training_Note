@@ -495,4 +495,197 @@ public class Main {
       }
     }
   }
-
+//-------------------------------------------------------------------------------------------------------------
+//                                                                                                      Örnek_6
+  public class Main
+  {
+      public static void printnum(int n)
+      {
+          if(n>5)
+          {
+              return;
+          }
+          System.out.print(n + " ");
+          printnum(n+1);
+      }
+  
+      public static void main(String args[])
+      {
+          printnum(1);
+      }
+  }
+  
+//-------------------------------------------------------------------------------------------------------------
+//                                                                                                      Örnek_7
+  import java.util.Scanner;
+  
+  public class Main
+  {
+      public static int max(int a, int b)
+      {
+          int m=0;
+          if(a>b)
+          {
+              m=a;
+          }
+          else if(b>a)
+          {
+              m=b;
+          }
+          return m;
+      }
+  
+      // Overloading the max function to find maximum among 3 integer numbers
+      public static int max(int a, int b, int c)
+      {
+          int m=0;
+          if(a>b && a>c)
+          {
+              m=a;
+          }
+          else if(b>a && b>c)
+          {
+              m=b;
+          }
+          else if(c>a && c>b)
+          {
+              m=c;
+          }
+          return m;
+      }
+  
+      public static void main(String args[])
+      {
+          int x,y,z;
+          Scanner sc=new Scanner(System.in);
+          System.out.println("Enter 2 integer numbers");
+          x=sc.nextInt();
+          y=sc.nextInt();
+          System.out.println("Maximum number = " + max(x,y));
+          System.out.println("Enter 3 integer numbers");
+          x=sc.nextInt();
+          y=sc.nextInt();
+          z=sc.nextInt();
+          System.out.println("Maximum number = " + max(x,y,z));
+      }
+  }
+//-------------------------------------------------------------------------------------------------------------
+//                                                                                                      Örnek_8
+  import java.util.Scanner;
+  
+  public class Main
+  {
+      public static float sum(int a, float b)
+      {
+          float s=0;
+          s=a+b;
+          return s;
+      }
+  
+      // Overloading the sum function to find the sum of three different types of numbers
+      public static double sum(int a, float b, double c)
+      {
+          double s=0;
+          s=a+b+c;
+          return s;
+      }
+  
+      public static void main(String args[])
+      {
+          int x;
+          float y;
+          double z;
+          Scanner sc=new Scanner(System.in);
+          System.out.println("Enter one integer and one decimal numbers");
+          x=sc.nextInt();
+          y=sc.nextFloat();
+          System.out.println("Sum = " + sum(x,y));
+          System.out.println("Enter one integer and two decimal numbers");
+          x=sc.nextInt();
+          y=sc.nextFloat();
+          z=sc.nextDouble();
+          System.out.println("Sum = " + sum(x,y,z));
+      }
+  }
+//-------------------------------------------------------------------------------------------------------------
+//                                                                                                      Örnek_9
+  import java.util.Scanner;
+  public class Main {
+      public static void parasorgulama(int bakiye_f3)
+      {  
+          System.out.println("Bakiyeniz : " + bakiye_f3);
+      }
+  
+      public static int paracekme(int bakiye_f)
+      {
+          Scanner scanner = new Scanner(System.in);
+          System.out.print("Çekmek istediğiniz tutar : ");
+          int tutar = scanner.nextInt();
+          scanner.nextLine();
+          
+          if (bakiye_f - tutar < 0) {
+              
+              System.out.println("Yeterli Bakiye Yok . Bakiyeniz : " + bakiye_f);
+          }
+          else {
+              bakiye_f -= tutar;
+              System.out.println("Yeni bakiyeniz : " + bakiye_f);
+          }
+          return bakiye_f;
+      }
+  
+      public static int parayatirma(int bakiye_f2)
+      {  
+          Scanner scanner = new Scanner(System.in);
+          System.out.print("Yatırmak istediğiniz tutar : ");
+          int tutar = scanner.nextInt();
+          scanner.nextLine();
+          
+          bakiye_f2 += tutar;
+          
+          System.out.println("Yeni Bakiyeniz  : " + bakiye_f2);
+          return bakiye_f2;
+      }
+  
+      public static void main(String[] args) {
+        
+          Scanner scanner = new Scanner(System.in);
+          int bakiye = 1000;
+          String islemler = "1.İşlem : Bakiye Öğrenme\n"
+                            + "2.İşlem : Para Çekme\n"
+                            + "3.İşlem : Para Yatırma\n"
+                            + "Çıkış için q'a basın";
+          
+          System.out.println("*************************");
+          System.out.println(islemler);
+          System.out.println("*************************");
+          
+          while (true) {
+              
+              System.out.print("İşlemi Seçiniz: ");
+              String islem = scanner.nextLine();
+              
+              if (islem.equals("q")) {
+                  
+                  System.out.println("Programdan Çıkılıyor...");
+                  break;
+              }
+              else if (islem.equals("1")){
+                  parasorgulama(bakiye);
+              }
+              else if (islem.equals("2")){
+                  bakiye = paracekme(bakiye);
+                  
+                  
+              }
+              else if (islem.equals("3")){
+                  bakiye = parayatirma(bakiye);
+                  
+              }
+              else {
+                  System.out.println("Geçersiz İşlem...");
+              }  
+          } 
+          
+      }
+  }
