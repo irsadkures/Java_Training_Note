@@ -9,14 +9,14 @@ public class Araba {
     
     
     
-    public void setModel(String model) {
+    public void setModel(String modelll) {
         
-        this.model = model;
+        model = modelll;
         
         
     }
     public String getModel(){
-        return this.model;
+        return model;
     }
 
     /**

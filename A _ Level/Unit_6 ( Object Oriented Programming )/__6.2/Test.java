@@ -5,13 +5,13 @@ public class Test {
         Araba araba1 = new Araba();
         
         
-        araba1.setModel("Renault");
+        //araba1.setModel("BMW");
         
-        System.out.println("Arabanın modeli " + araba1.getModel());
+        //System.out.println("Arabanın modeli " + araba1.getModel());
         
-        
+
         araba1.setKapilar(-4);
-        
+        System.out.println("Arabanın modeli " + araba1.getKapilar());
         
         /*Araba araba2;
         
