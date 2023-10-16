@@ -18,7 +18,7 @@ public class Kopek extends Hayvan {
         
         System.out.println("Köpek koşuyor....");
         
-        harekete_gec(hiz);
+        super.harekete_gec(hiz);
 
     }
 
