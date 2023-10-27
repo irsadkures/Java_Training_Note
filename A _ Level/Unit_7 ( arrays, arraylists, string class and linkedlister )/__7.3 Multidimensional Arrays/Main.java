@@ -4,7 +4,7 @@ public class Main {
    
     public static void main(String[] args) {
 //----------------------------------------------------------------       
-     /*   int[][] array = new int[2][2];
+    /*    int[][] array = new int[2][2];
         array[0][0] = 10;
         array[0][1] = 20;
         array[1][0] = 30;
@@ -23,7 +23,7 @@ public class Main {
 */
 
 //----------------------------------------------------------------
-      /* 
+     
         int[][] array = new int[2][2];
         Scanner scanner = new Scanner(System.in);
         for (int i =  0 ; i < 2; i++){
@@ -40,7 +40,7 @@ public class Main {
                  System.out.print(array[i][j] + " ");
             }
            System.out.println(""); 
-        }*/
+        }
 //----------------------------------------------------------------
 
 
