@@ -22,7 +22,7 @@ public class Main {
         ArrayList<String> arraylist = new ArrayList<String>();
         
         //ArrayList<double> arraylist2 = new ArrayList<double>();
-        
+        //ArrayList<int> arraylist2 = new ArrayList<int>();
         ArrayList<Integer> arraylist2 = new ArrayList<Integer>();
         
         

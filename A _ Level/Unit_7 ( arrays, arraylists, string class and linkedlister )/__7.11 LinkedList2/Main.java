@@ -52,9 +52,10 @@ public class Main {
                
     }
     public static void main(String[] args) {
-        
+       
         LinkedList<String> gidilecek_yerler = new LinkedList<String>();
-               
+                      
+/*        
         gidilecek_yerler.add("Postane");
         
         gidilecek_yerler.add("Market");
@@ -75,15 +76,16 @@ public class Main {
         gidilecek_yerler.add(4,"Alışveriş Merkezi");
         gidilecek_yerler.remove(3);
         
-        listeyi_bastir(gidilecek_yerler); 
+        listeyi_bastir(gidilecek_yerler); */
         
-        /* 
+         
         sirali_ekle(gidilecek_yerler, "Postane");
         sirali_ekle(gidilecek_yerler, "Market");
         sirali_ekle(gidilecek_yerler, "Ev");
+        sirali_ekle(gidilecek_yerler, "zam");
         
 
-        listeyi_bastir(gidilecek_yerler);*/
+        listeyi_bastir(gidilecek_yerler);
         
     
     }
