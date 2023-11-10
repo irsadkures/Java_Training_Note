@@ -46,7 +46,7 @@ public class Yolcu implements YurtDisiKurallari{
 
     @Override
     public boolean yurtdisiHarciKontrol() {
-        if (this.harc < 15) {
+        if (this.harc < 150) {
             
             System.out.println("Lütfen yurtdışı çıkış harcını tam yatırın...");
             return false;
