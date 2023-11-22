@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\asus\\Desktop\\Package\\Paketler3\\Paketler3\\dist\\Paketler3.jar"
+    ]
+}

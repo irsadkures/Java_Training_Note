@@ -1,5 +1,5 @@
 
-package com.mustafamurat.paket2;
+package com.irsadkures.paket2;
 
 public interface AdayOgrenci {
     

@@ -1,7 +1,7 @@
 
 public final class Database {
     
-    public  void baglantiKur(String username,String password) {
+    public final void baglantiKur(final String username,final String password) {
         
         
         System.out.println(username);

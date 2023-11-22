@@ -1,5 +1,5 @@
 
-package com.mustafamurat.paket1;
+package com.irsadkures.paket1;
 
 public class Test {
     public static void main(String[] args) {

@@ -1,5 +1,8 @@
 
 public class FinalTest {
+    //public final int deneme;
+
+
     public final int obje_sayisi;
     
     private static int say = 0;
@@ -7,7 +10,7 @@ public class FinalTest {
     
 
     public FinalTest(String isim) {
-        
+        //this.deneme = 10;
         this.isim = isim;
         say++;
         obje_sayisi = say;

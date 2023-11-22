@@ -7,19 +7,19 @@ public class Main {
         System.out.println("Obje Sayısı: " + f1.obje_sayisi);
         System.out.println("Obje Sayısı: " + f2.obje_sayisi);
         
-        //System.out.println(Math.PI);
+        System.out.println(Math.PI);
         
         //Math.PI = 3.15;
         
         
         
-/* 
+ 
         System.out.println("Database İsmi : " + Database.databaseIsmi);
         System.out.println("UserName : " + Database.userName);
         System.out.println("Password : " + Database.password);
         
-        Database.userName = "root2";
-        */
+        //Database.userName = "root2";
+        
         
     }
     

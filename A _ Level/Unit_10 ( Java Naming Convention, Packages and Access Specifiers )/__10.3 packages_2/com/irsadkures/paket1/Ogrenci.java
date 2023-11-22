@@ -1,7 +1,7 @@
 
-package com.mustafamurat.paket1;
+package com.irsadkures.paket1;
 
-import com.mustafamurat.paket2.AdayOgrenci;
+import com.irsadkures.paket2.AdayOgrenci;
 
 
 public class Ogrenci implements AdayOgrenci {
