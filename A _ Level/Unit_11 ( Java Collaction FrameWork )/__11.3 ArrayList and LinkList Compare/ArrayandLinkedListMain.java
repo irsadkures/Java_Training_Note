@@ -24,9 +24,9 @@ public class ArrayandLinkedListMain {
         
         baslangic = System.currentTimeMillis();
         
-        for (int i = 0 ; i< 100000 ; i++) {
+        for (int i = 0 ; i< 1000000 ; i++) {
             
-            list.add(0,i);
+            list.add(i);
             
         }
         bitis = System.currentTimeMillis();

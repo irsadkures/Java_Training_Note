@@ -129,11 +129,11 @@ public class SetMain {
     set2.add("CSS");
     
     
-  /* Set<String> fark = new HashSet<String>(set2);
+   Set<String> fark = new HashSet<String>(set2);
     
         System.out.println(fark.removeAll(set1));
-        System.out.println(fark);*/
-  
+        System.out.println(fark);
+   System.out.println("LinkedHashSet*******************************");
     Set<String> kesisim = new HashSet<String>(set2);
         System.out.println(kesisim.retainAll(set1));
         
