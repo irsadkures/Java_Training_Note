@@ -29,10 +29,10 @@ public class HashMapMain {
         
         hashMap.put(50, "Javascript");
         
+    
         
         
-        
-        System.out.println(hashMap);
+        //System.out.println(hashMap);
         /*System.out.println(hashMap);
         
         System.out.println(hashMap.get(50));
