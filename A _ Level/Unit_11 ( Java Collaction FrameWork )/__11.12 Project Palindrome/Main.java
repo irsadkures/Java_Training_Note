@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         // Bir Cümlenin Palindrome olup olmadığını bulma
         
-        // kasaylabalyasak
+        // kasaylabalyasak  
         
         Scanner scanner = new Scanner(System.in);
         System.out.print("Cümleyi Giriniz: ");

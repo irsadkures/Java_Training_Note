@@ -22,12 +22,12 @@ class Player implements Comparable<Player>{
     @Override
     public int compareTo(Player player) {
 
-        if (this.id < player.id) {
+        if (this.id > player.id) {
             
             return -1;
             
         }
-        else if (this.id > player.id) {
+        else if (this.id < player.id) {
             return 1;
             
         }
@@ -42,8 +42,8 @@ class Player implements Comparable<Player>{
 }
 public class Main {
     public static void main(String[] args) {
-        
-       /* List<String> list_string = new ArrayList<String>();
+      /*  
+       List<String> list_string = new ArrayList<String>();
         
         
         list_string.add("Java");
@@ -56,28 +56,31 @@ public class Main {
         
         for (String s : list_string) {
             System.out.println(s);
-        }*/
-       
+        }
+        */
+        /* 
         List<Player> list_player = new ArrayList<Player>();
         
         list_player.add(new Player("ali", 5));
         list_player.add(new Player("irsad", 1));
         list_player.add(new Player("kures", 10));
         list_player.add(new Player("irfan", 4));
-        
+        */
+       /* 
         Player p1 = new Player("ali", 5);
         Player p2 = new Player("irfan", 4);
         
-       // System.out.println(p1.compareTo(p1));
-        
-        //Collections.sort(list_player);
-        
+        System.out.println(p1.compareTo(p2));
+        */
+        /* 
+        Collections.sort(list_player);
+      
         for (Player p : list_player) {
             
             System.out.println(p);
             
-        }
-        /* 
+        }*/
+         
         Set<Player> treeset = new  TreeSet<Player>();
         
         treeset.add(new Player("ali", 5));
@@ -89,7 +92,7 @@ public class Main {
             System.out.println(p);
             
         }
-        */
+        
         
     }
 

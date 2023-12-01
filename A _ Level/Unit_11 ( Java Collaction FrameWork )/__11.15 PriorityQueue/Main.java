@@ -13,11 +13,11 @@ class Player implements  Comparable<Player>{
     @Override
     public int compareTo(Player player) {
 
-        if (this.id < player.id) {
+        if (this.id > player.id) {
             return 1;
             
         }
-        else if (this.id > player.id) {
+        else if (this.id < player.id) {
             return -1;
         }
         return 0;
@@ -59,8 +59,8 @@ public class Main {
     poll() -----> Kuyruğun başındaki elemanı çıkartır ve değer olarak döner. Eğer kuyruk boşsa null referans döner.
     size()------> Kuyruğun içindeki eleman sayısını döner.
         */
-      Queue<Integer> queue = new PriorityQueue<Integer>();
-      /* 
+      //Queue<Integer> queue = new PriorityQueue<Integer>();
+       
       Queue<Player> queue = new PriorityQueue<Player>();
       queue.offer(new Player("irsad", 5));
       queue.offer(new Player("kures", 1));
@@ -70,7 +70,8 @@ public class Main {
           
           System.out.println("Eleman Çıkarılıyor : " + queue.poll());
       }
-      */
+      
+      /* 
       queue.offer(5);
       queue.offer(1);
       queue.offer(2);
@@ -83,6 +84,7 @@ public class Main {
           System.out.println("Eleman Çıkarılıyor : " + queue.poll());
           
       }
+      */
       /*for (Integer i : queue) {
           System.out.println(i);
           

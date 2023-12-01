@@ -26,18 +26,19 @@ public class Main {
       
       
         //System.out.println(queue.peek());
+       /* 
+        for (String s: queue) {
+            System.out.println(s);
+            
+        }*/
+       /* System.out.println("***************************");
+        System.out.println("Eleman Çıkarılıyor : " + queue.poll());
         
         for (String s: queue) {
             System.out.println(s);
             
-        }
+        }*/
         System.out.println("***************************");
-        //System.out.println("Eleman Çıkarılıyor : " + queue.poll());
-        
-        for (String s: queue) {
-            System.out.println(s);
-            
-        }
         System.out.println(queue.isEmpty());
         
         while (!queue.isEmpty()) {
