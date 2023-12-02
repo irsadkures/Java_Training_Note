@@ -10,8 +10,12 @@ public class Main {
     
     public static void ikincifonksiyon() {
        
-        ucuncufonksiyon();
         
+        try {
+            ucuncufonksiyon();
+         } catch (Exception e) {
+            System.out.println("aaaaaaaaaa");
+         }
        
     }
     public static void birincifonksiyon() {

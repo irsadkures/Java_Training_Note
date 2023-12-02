@@ -2,7 +2,7 @@
 import java.io.IOException;
 
 
-public class InvalidAgeException extends  ArithmeticException {
+public class InvalidAgeException extends  IOException {
     
     public InvalidAgeException(String message) {
         
