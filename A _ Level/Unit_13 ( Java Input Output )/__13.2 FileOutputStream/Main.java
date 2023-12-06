@@ -18,13 +18,13 @@ public class Main {
         try {
             fos = new FileOutputStream("dosya.txt",true);
             
-            //byte[] array = {101,75,66,68};
+            byte[] array = {101,75,66,68};
             String s = "irsad kures";
             
-            byte[] s_array = s.getBytes();
+            //byte[] array = s.getBytes();
             
             
-            fos.write(s_array);
+            fos.write(array);
             
            
             

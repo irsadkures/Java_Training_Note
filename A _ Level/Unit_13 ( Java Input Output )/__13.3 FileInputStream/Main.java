@@ -14,7 +14,7 @@ public class Main {
             fis = new FileInputStream("dosya.txt");
             
             
-
+       /* 
             int deger;
             
             String s = "";
@@ -34,26 +34,28 @@ public class Main {
                 
             }
             System.out.println("Dosyanın 5.Yerinden İtibaren 10 karakter :  " + s);
-            
-            
-            /*while ((deger =  fis.read()) != -1) {
+            */
+            /* 
+            String s = "";
+            int deger;
+            while ((deger =  fis.read()) != -1) {
                 
                 s += (char) deger;
                 
             }
             
-            System.out.println("Dosya İçeriği : " + s);*/
-            
+            System.out.println("Dosya İçeriği : " + s);
+            */
             
             
             //fis.skip(5);
             
-            /*System.out.println("İlk Karakter : " + (char)fis.read());
-            System.out.println("İkinci Karakter : " + (char)fis.read());*/
-            
-            /*System.out.println("Birinci Karakter : " + (char)(fis.read()));
+           /*  System.out.println("İlk Karakter : " + (char)fis.read());
+            System.out.println("İkinci Karakter : " + (char)fis.read());
+            */
+            System.out.println("Birinci Karakter : " + (char)(fis.read()));
             System.out.println("İkinci  Karakter : " + (char)(fis.read()));
-            System.out.println("Üçüncü  Karakter : " + (char)(fis.read()));*/
+            System.out.println("Üçüncü  Karakter : " + (char)(fis.read()));
             
             
             
