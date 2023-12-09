@@ -2,3 +2,5 @@ irsad kures,Robot Muhendisi
 ali devlet,Ziraet Muhendisi
 muhammat atawullah,Bilgisayar Muhendisi
 abdullah muhammat,Makine Muhendisi
+muhammat arif,Tasarým Mühendisliði
+muhammat arif,Tasarým Mühendisliði

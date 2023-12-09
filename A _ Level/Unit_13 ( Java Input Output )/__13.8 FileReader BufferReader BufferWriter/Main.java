@@ -80,7 +80,7 @@ public class Main {
 
 
       */
-       /* 
+       
        try(BufferedWriter writer = new BufferedWriter(new FileWriter("ogrenciler.txt",true))){
            writer.write("muhammat arif,Tasarım Mühendisliği\n");
            
@@ -88,6 +88,6 @@ public class Main {
        } catch (IOException ex) {
             System.out.println("Dosya açılırken hata oluştu...");
         }
-        */
+        
     }
 }
