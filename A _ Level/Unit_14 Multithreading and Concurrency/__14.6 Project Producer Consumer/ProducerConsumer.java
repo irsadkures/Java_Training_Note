@@ -16,7 +16,7 @@ public class ProducerConsumer {
         
         while (true) {
             try {
-                Thread.sleep(5000);
+                Thread.sleep(1000);
             } catch (InterruptedException ex) {
                 Logger.getLogger(ProducerConsumer.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -40,7 +40,7 @@ public class ProducerConsumer {
         
         while (true) {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(5000);
             } catch (InterruptedException ex) {
                 Logger.getLogger(ProducerConsumer.class.getName()).log(Level.SEVERE, null, ex);
             }
