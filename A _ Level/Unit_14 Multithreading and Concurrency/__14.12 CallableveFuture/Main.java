@@ -44,10 +44,10 @@ public class Main {
                 
                 int sure =  random.nextInt(1000) + 2000;
                 
-                /*if (sure > 2500){
+                if (sure > 2500){
                     throw new IOException("Thraead çok uzun süre uyudu....");
                     
-                }*/
+                }
                 
                 
                 try {

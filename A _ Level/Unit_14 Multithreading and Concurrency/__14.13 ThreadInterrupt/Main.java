@@ -15,7 +15,7 @@ public class Main {
             public void run() {
                 System.out.println("Thread çalışıyor....");
                 
-                for (int i = 0 ; i < 1000000 ;i++){
+                for (int i = 0 ; i < 100000000 ;i++){
                     
                     if (Thread.currentThread().isInterrupted()){
                         System.out.println("Kesintiye Uğradı....");

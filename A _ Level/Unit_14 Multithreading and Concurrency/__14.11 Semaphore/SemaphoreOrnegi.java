@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 public class SemaphoreOrnegi {
     
-    private Semaphore sem = new Semaphore(4);
+    private Semaphore sem = new Semaphore(2);
     
     public void threadFonksiyonu(int id) {
         
