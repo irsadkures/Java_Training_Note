@@ -66,22 +66,22 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="iskender">
       <Properties>
-        <Property name="text" type="java.lang.String" value="&#x130;skender - 15 TL"/>
+        <Property name="text" type="java.lang.String" value="&#x130;skender - 150 TL"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JCheckBox" name="beyti">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Beyti - 12 TL"/>
+        <Property name="text" type="java.lang.String" value="Beyti - 120 TL"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JCheckBox" name="salata">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Salata - 5 TL"/>
+        <Property name="text" type="java.lang.String" value="Salata - 50 TL"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JCheckBox" name="ayran">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Ayran - 2 TL"/>
+        <Property name="text" type="java.lang.String" value="Ayran - 20 TL"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="siparis_goster">

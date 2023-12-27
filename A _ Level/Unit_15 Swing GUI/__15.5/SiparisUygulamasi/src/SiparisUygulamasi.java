@@ -45,13 +45,13 @@ public class SiparisUygulamasi extends javax.swing.JFrame {
 
         jLabel1.setText("MENÜ");
 
-        iskender.setText("İskender - 15 TL");
+        iskender.setText("İskender - 150 TL");
 
-        beyti.setText("Beyti - 12 TL");
+        beyti.setText("Beyti - 120 TL");
 
-        salata.setText("Salata - 5 TL");
+        salata.setText("Salata - 50 TL");
 
-        ayran.setText("Ayran - 2 TL");
+        ayran.setText("Ayran - 20 TL");
 
         siparis_goster.setText("Siparişleri Göster");
         siparis_goster.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +127,7 @@ public class SiparisUygulamasi extends javax.swing.JFrame {
         
         if (iskender.isSelected()) {
             
-            siparisler.put("İskender",15);
+            siparisler.put("İskender",150);
             
         }
         else {
@@ -136,7 +136,7 @@ public class SiparisUygulamasi extends javax.swing.JFrame {
         }
         if (beyti.isSelected()) {
             
-            siparisler.put("Beyti",12);
+            siparisler.put("Beyti",120);
             
         }
         else {
@@ -145,7 +145,7 @@ public class SiparisUygulamasi extends javax.swing.JFrame {
         }
         if (salata.isSelected()) {
             
-            siparisler.put("Salata",5);
+            siparisler.put("Salata",50);
             
         }
         else {
@@ -154,7 +154,7 @@ public class SiparisUygulamasi extends javax.swing.JFrame {
         }
         if (ayran.isSelected()) {
             
-            siparisler.put("Ayran",2);
+            siparisler.put("Ayran",20);
             
         }
         else {

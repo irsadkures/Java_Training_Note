@@ -110,9 +110,9 @@ public class KullaniciGirisi extends javax.swing.JFrame {
         }
         if (message.equals("Hoşgeldiniz, " + kullanici_adi)){
             
-            
-            JOptionPane.showMessageDialog(this, message);
             System.exit(0);
+            JOptionPane.showMessageDialog(this, message);
+            
             
             
         }
