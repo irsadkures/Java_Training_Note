@@ -77,7 +77,7 @@ public class DosyaIndirme extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void dosyaindirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dosyaindirActionPerformed
-        Timer timer = new Timer(100,null);
+        Timer timer = new Timer(10,null);
         
         
         timer.addActionListener(new ActionListener() {
