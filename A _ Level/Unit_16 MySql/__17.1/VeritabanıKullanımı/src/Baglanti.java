@@ -12,15 +12,12 @@ import java.util.logging.Logger;
 public class Baglanti {
     
     private String kullanici_adi = "root";
-    private String parola = "";
-    
-    private String db_ismi = "deneme1";
-    
+    private String parola = "";   
+    private String db_ismi = "demo"; 
     private String host =  "localhost";
-    
     private int port = 3306;
-    
     private Connection con = null;
+    
     
     private Statement statement = null;
     private PreparedStatement preparedStatement = null;
@@ -87,7 +84,7 @@ public class Baglanti {
         try {
             statement = con.createStatement();
             
-            String sorgu = "Delete from calisanlar where id > 3";
+            String sorgu = "Delete from calisanlar where id > 4";
             
             int deger = statement.executeUpdate(sorgu);
             System.out.println(deger + " kadar veri etkilendi...");
